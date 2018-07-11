@@ -22,7 +22,9 @@
         <activity
             android:name=".Go"
             android:label="@string/title_activity_go"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
