@@ -168,6 +168,8 @@ public class PocketSphinxActivity extends Activity implements
 
             makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
             ((TextView) findViewById(R.id.result_text)).setText(text);
+            Log.d("Debug",Integer.toString(hypothesis.getBestScore()));
+            Log.d("Debug",Integer.toString(hypothesis.getProb()));
             hypothesis.delete();
         }
 
@@ -192,7 +194,7 @@ public class PocketSphinxActivity extends Activity implements
 //        if (searchName.equals(KWS_SEARCH))
 //            recognizer.startListening(searchName);
 //        else
-        recognizer.startListening(searchName, 10000);
+        recognizer.startListening(searchName);
 
         String caption = getResources().getString(captions.get(searchName));
         ((TextView) findViewById(R.id.caption_text)).setText(caption);

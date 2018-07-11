@@ -2,10 +2,13 @@
 
 grammar digits;
 
-<digit> = kasher_le_aleph |
-          kasher_le_bet |
-          kasher_le_gimel |
-          kasher_le_dalet |
-          kasher_le_hey;
+<digit> = a |
+          b |
+          c |
+          d |
+          e |
+          a1 |
+          c1 |
+          d1;
 
 public <digits> = <digit>+;
