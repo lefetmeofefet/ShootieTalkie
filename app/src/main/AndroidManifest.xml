@@ -22,7 +22,8 @@
         <activity
             android:name=".Go"
             android:label="@string/title_activity_go"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
 
         </activity>
     </application>
