@@ -8,6 +8,7 @@ grammar digits;
           d |
           e |
           a1 |
+          a2 |
           c1 |
           d1;
 
