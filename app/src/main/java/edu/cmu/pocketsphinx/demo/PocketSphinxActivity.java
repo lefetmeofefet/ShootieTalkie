@@ -171,6 +171,24 @@ public class PocketSphinxActivity extends Activity implements
             Log.d("Debug",Integer.toString(hypothesis.getBestScore()));
             Log.d("Debug",Integer.toString(hypothesis.getProb()));
             hypothesis.delete();
+// Insert communication in the following cases.
+            switch(text){
+                case "a": break;
+                case "a1": break;
+                case "a2": break;
+                case "a3": break;
+                case "b": break;
+                case "b1": break;
+                case "c": break;
+                case "c1": break;
+                case "c2": break;
+                case "d": break;
+                case "d1": break;
+                case "d2": break;
+                case "e": break;
+                case "e1": break;
+
+            }
         }
 
     }

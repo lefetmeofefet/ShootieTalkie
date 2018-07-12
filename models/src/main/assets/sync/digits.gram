@@ -2,14 +2,12 @@
 
 grammar digits;
 
-<digit> = a |
-          b |
-          c |
-          d |
-          e |
-          a1 |
-          a2 |
-          c1 |
-          d1;
+<digit> = a | a1 | a2 | a3 |
+          b | b1 |
+          c | c1 | c2 |
+          d | d1 | d2 |
+          e | e1 ;
+
+
 
 public <digits> = <digit>+;
