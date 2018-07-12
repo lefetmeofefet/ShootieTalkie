@@ -40,6 +40,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -88,6 +89,7 @@ public class PocketSphinxActivity extends Activity implements
         // Recognizer initialization is a time-consuming and it involves IO,
         // so we execute it in async task
         new SetupTask(this).execute();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); // prevents the phone from sleeping.
     }
 
     private static class SetupTask extends AsyncTask<Void, Void, Exception> {
